@@ -1,0 +1,14 @@
+server:
+  port: 8080
+logging:
+  level:
+    root: debug
+security:
+  oauth2:
+    client:
+      client-id: admin
+      client-secret: admin
+      scope:
+        - openid
+    resource:
+      token-info-uri: https://localhost:9443/oauth2/introspect
